@@ -8,13 +8,15 @@
 }
 /*=== Body ===*/
 body{
-   background-color: var(--noir);
+  font-family: 'Montserrat', sans-serif;
+  background: #2d288a;
+  background: linear-gradient(90deg, rgba(45, 40, 138, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(15, 98, 115, 1) 100%);
    color :#f4f4f4
 }
 /* ==Header ===*/
 header{
-background-color: var(--noir);
-    color: var(--blanc);
+background-color: var(--blanc);
+    color: var(--noir);
     align-items: center;
     padding: 0 1em;
     position: relative;
@@ -22,45 +24,41 @@ background-color: var(--noir);
     display: flex;
 }
 nav a{
-    background-color: var(--noir);
-    color: var(--doré);
+    color: var(--noir);
     margin-left: 20px;
-    font-weight: bold;
+    font-weight: italic;
     text-decoration: none;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 nav a:hover{
     color: var(--doré);
 }
 /* ==Main ==*/
 main{
-    background-color: var(--noir);
     color: var(--blanc);
 }
-#image{
+#image-profil{
     width: 50%;
     text-align: center;
-    border: 0px solid black;
-    margin-left: 0px;
-    box-shadow: 0 2px 5px;
-    border-radius:10px;
 }
-#image img{
+#image-profil img{
     width: 100%;
 }
 .description{
     width: auto;
     margin-left: 10px;
-    box-shadow: 0 5px 5px;
-    background-color: var(--noir);
 }
-.description h2{
-    text-decoration: none;
+.description h1{
+    font-size: 2em;
+    padding-left: 10px;
+    margin-left: 5px;
 }
 /*=== Footer ===*/
 footer{
-    background-color: #000;
+    background-color: var(--blanc);
+    color: var(--noir);
+    text-align: center;
 }
 
 /*== Page projets realisees ===*/

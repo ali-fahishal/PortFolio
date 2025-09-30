@@ -5,14 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- rendre le site responsive -->
         <meta name = "Author" content="ALI"> <!--definir le nom de l'auteur du site-->
         <title>PORTFOLIO ALI</title>
-        <link rel="stylesheet" href="style.css"> <!--associer le fichier css au fichier html-->
+        <link rel="stylesheet" href="style.css">
+         <!--font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     </head>
     <body>
-        <header class = "header_contain">
+        <header>
+            <h1>ALI Amadou Fahishal</h1>
           <div class = "nav_contain" >
-             <h1> PORT_FOLIO : ALI A. Fahishal</h1>
              <nav aria-label="barre de menu">
-                <a href = index.html>Accueil</a>
                 <a href = projets_realises.html >Projets</a>
                 <a href = competences.html>Competences</a>
                 <a href = Diplomes&certificats.html> Diplomes et Certificats</a>              
@@ -20,14 +24,15 @@
           </div>      
         </header>
         <main>
-            <div id = "image">
-                <img src = "images/profil.jpg" alt= "photo d'acceuil" loadind = "lazy">
+            <div id = "image-profil">
+                <img src = "images/profil.png" alt= "photo d'acceuil" loadind = "lazy">
             </div>
             <section class = "description" aria-label = "a propos de moi">
-                <h1><b><u>A propos de moi</u></b></h1>
-            <div>
-                <p>Passionné par la cybersécurité offensive, je suis un autodidacte engagé dans l’apprentissage de ce domaine fascinant. Issu d’une formation en électrotechnique, j’ai élargi mes compétences vers le développement web (HTML, CSS, JavaScript, Python) ainsi que la modélisation 3D. J’explore aussi les bases du hacking éthique, des réseaux et des systèmes de sécurité. Curieux, rigoureux et motivé, je m’investis pleinement dans chaque projet en combinant précision technique et réflexion stratégique. Mon objectif est de maîtriser les outils, comprendre les vulnérabilités, et évoluer avec intégrité dans le monde de la cybersécurité.
- </p>
+                <h1>A propos de moi</h1>
+            <div class="a-propos-text">
+                <p>
+                Passionné par la <em>cybersécurité offensive</em>, je suis un autodidacte engagé dans l’apprentissage de ce domaine fascinant. Issu d’une formation en <em>électrotechnique</em>, j’ai élargi mes compétences vers le <em>développement web (HTML, CSS, JavaScript, Python)</em> ainsi que la <em>modélisation 3D</em>. J’explore aussi les bases du hacking éthique, des réseaux et des systèmes de sécurité. Curieux, rigoureux et motivé, je m’investis pleinement dans chaque projet en combinant précision technique et réflexion stratégique. Mon objectif est de maîtriser les outils, comprendre les vulnérabilités, et évoluer avec intégrité dans le monde de la cybersécurité.
+                </p>
             </div>
             </section>
         </main>
