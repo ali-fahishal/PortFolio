@@ -22,41 +22,53 @@ footer{
   background-color: var(--blanc);
   color: var(--noir);  
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+header nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+}
+nav .logo img{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
 }
 nav a{
-    margin-left: 20px;
+    margin-left: 10px;
     text-decoration: none;
-    
+    color: var(--noir);
+    font-size: 1.3em;  
 }
-nav a:hover{
-    color: var(--doré);
+nav .liens-de-navigation :hover{
+    color: #fc4a1a;
 }
+
 /* ==Main ==*/
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
 #image-profil{
-    width: 30%;
-    text-align: center;
+  width: 20%;
+  text-align: center;
 }
 #image-profil img{
     width: 100%;
 }
-.description{
+.presentation {
     width: auto;
     margin-left: 20px;
 }
-.description h1{
-  font-size: 2em;
-  color: #EEE4E1;
+.presentation h1{
+  font-size: 3em;
+  color: #22C1C3;
 }
-.a-propos-text{
-  text-align: justify;
-  width: 50%;
-}
+
 .voir-projets a{
+  margin-top: 30px;
   text-decoration: none;
   background: #fc4a1a;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
@@ -72,8 +84,6 @@ nav a:hover{
 }
 /*=== Footer ===*/
 footer{
-    background-color: var(--blanc);
-    color: var(--noir);
     text-align: center;
 }
 
