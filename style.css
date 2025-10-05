@@ -63,10 +63,12 @@ nav .liens-de-navigation :hover{
 }
 #image-profil img{
     width: 100%;
+    border-radius: 50px;
 }
 .presentation {
     width: auto;
     margin-left: 20px;
+    padding-bottom: 20px;
 }
 .presentation h1{
   font-size: 3em;
@@ -162,7 +164,7 @@ footer{
   display:inline-block;
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-left:10px;
+  margin-left:80px;
 }
 .project3D {
   display: flex;
