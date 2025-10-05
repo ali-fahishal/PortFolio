@@ -91,9 +91,13 @@ nav .liens-de-navigation :hover{
 }
 /*  Acceuil section projets recents */
 .projets-recents {
-    margin: 20px;
+    margin: 0px;
     text-align: center;
+    background-color: var(--blanc);
+    color: var(--noir);
+    padding: 40px;
 }
+
 .images-acceuil {
     display: flex;
     justify-content: center;
@@ -102,7 +106,7 @@ nav .liens-de-navigation :hover{
     margin-top: 20px;
 }
 .images-acceuil img{
-    width: 600px;
+    width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
@@ -115,35 +119,17 @@ footer{
 }
 
 /*== Page projets realisees ===*/
-/* === Section projets 3D ===*/
-.PROJECT h1{
-  border: 3px solid #096a31;
-  display:inline-block;
-  margin-bottom: 20px;
-}
-.project3D {
-  display: grid;
-  grid-template-columns: 350px 350px 350px;
-  grid-template-rows: auto;
-  gap: 0.5em;
-  padding-top: 1em;
-  justify-content: center;
-}
-
-.project3D img{
-  width: 350px;
-  height: 300px;
-
-}                                             
-#video{
-  display: flex ;
-  margin-top: 30px;
-  width: 600px;
-  margin-left: 30%;
-}
 /* === Section projet solaire ===*/
-section{
-  margin: 20px;
+.PROJECT{
+  color: black;
+  background-color: white;
+}
+
+#titre-portolio{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 3.5em;
 }
 
 .solar_project{
@@ -152,14 +138,52 @@ section{
 }
 
 .solar_project div{
-  display: grid;
-  grid-template-columns:350px 350px 350px;
-  gap: 0.5em;
-  padding: 1em 1em;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .solar_project img{
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.solar_project h3{
+  padding: 10px;
+}
+/* === Section projets 3D ===*/
+.PROJECT h2{
+  border: 3px solid #096a31;
+  display:inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left:10px;
+}
+.project3D {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project3D img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+} 
+
+#video{
+  display: flex ;
+  margin-top: 30px;
+  width: 600px;
+  margin-left: 30%;
 }
