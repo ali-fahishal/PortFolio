@@ -115,6 +115,42 @@ nav .liens-de-navigation :hover{
     box-shadow: 0 1px 5px rgba(0,0,0,0.1);
 }
 
+/* Acceuil section prise de contacts */
+.Contactez-nous{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Contactez-nous h2{
+    margin-bottom: 20px;
+}
+.form-column input{
+    width: 200px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-column label,
+.form-message label{
+    font-weight: 600;
+}
+.form-message textarea{
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.cta{
+    width: 150px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color:#096a31;
+    font-weight: 600;
+}
 /*=== Footer ===*/
 footer{
     text-align: center;
@@ -188,4 +224,63 @@ footer{
   margin-top: 30px;
   width: 600px;
   margin-left: 30%;
+}
+
+/* gerer le responsive avec les medias query */
+/* pages d'acceuil */
+@media (max-width: 768px){
+  .presentation{
+    flex-direction: column;
+    text-align: center;
+  }
+  #image-profil{
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .presentation h1{
+    font-size: 2.5em;
+  }
+  .voir-projets{
+    width: 200px;
+    font-size: 1.1em;
+  }
+  .images-acceuil{
+    flex-direction: column;
+  }
+  .images-acceuil img{
+    width: 80%;
+    height: auto;
+  }
+  .form-column input, .form-message textarea{
+    width: 80%;
+  }
+  #video{
+    width: 100%;
+    margin-left:0;
+  }
+}
+
+/* portfolio */
+@media (max-width: 768px){
+  #titre-portolio{
+    font-size: 2.5em;
+  }
+  .solar_project div{
+    flex-direction: column;
+  }
+  .solar_project img{
+    width: 90%;
+    height: auto;
+  }
+  .project3D{
+    flex-direction: column;
+  }
+  .project3D img{
+    width: 90%;  
+    height: auto;
+  }
+  #video{
+    width: 90%;
+    margin-left:0;
+  }
 }
