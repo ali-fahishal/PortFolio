@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment dimensionner un système PV off-grid en Afrique — ALI Amadou Fahishal</title>
+  <meta name="description" content="Guide pratique pour dimensionner un système solaire off-grid adapté aux réalités du terrain africain : besoins, panneaux, batteries, onduleur.">
+  <meta name="author" content="ALI Amadou Fahishal">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body class="lang-fr">
+
+  <!-- Glows arrière-plan -->
+  <div class="bg-glow bg-glow--orange" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+
+  <!-- ======================================================
+       NAVIGATION
+       ====================================================== -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+
+      <a href="index.html" class="nav__logo" aria-label="Accueil ALI.AF">ALI.AF</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html#about"    class="nav__link"><span class="fr">À propos</span><span class="en">About</span></a></li>
+        <li><a href="index.html#projects" class="nav__link"><span class="fr">Projets</span><span class="en">Projects</span></a></li>
+        <li><a href="index.html#terrain"  class="nav__link"><span class="fr">Terrain</span><span class="en">Field</span></a></li>
+        <li><a href="blog.html"           class="nav__link active">Blog</a></li>
+        <li><a href="index.html#contact"  class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <div class="lang-toggle" role="group" aria-label="Choix de langue">
+          <button class="lang-toggle__btn" data-lang="fr" aria-pressed="true">FR</button>
+          <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav__hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="nav__mobile" id="mobile-menu" role="navigation" aria-label="Menu mobile">
+    <a href="index.html#about"    class="nav__link"><span class="fr">À propos</span><span class="en">About</span></a>
+    <a href="index.html#projects" class="nav__link"><span class="fr">Projets</span><span class="en">Projects</span></a>
+    <a href="index.html#terrain"  class="nav__link"><span class="fr">Terrain</span><span class="en">Field</span></a>
+    <a href="blog.html"           class="nav__link">Blog</a>
+    <a href="index.html#contact"  class="nav__link">Contact</a>
+  </div>
+
+  <main>
+    <article class="article-page">
+
+      <!-- Retour au blog -->
+      <div class="article-back">
+        <a href="blog.html">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span class="fr">Retour au blog</span>
+          <span class="en">Back to blog</span>
+        </a>
+      </div>
+
+      <!-- ====================================================
+           EN-TÊTE DE L'ARTICLE
+           ==================================================== -->
+      <header class="article-header">
+        <span class="article-card__category cat-solaire">Solaire</span>
+        <h1 class="article-header__title">
+          <span class="fr">Comment dimensionner un système PV off-grid en Afrique</span>
+          <span class="en">How to size an off-grid PV system in Africa</span>
+        </h1>
+        <div class="article-header__meta">
+          <span>ALI Amadou Fahishal</span>
+          <span>12 mars 2026</span>
+          <span>8 min <span class="fr">de lecture</span><span class="en">read</span></span>
+        </div>
+      </header>
+
+      <!-- ====================================================
+           CORPS DE L'ARTICLE
+           ==================================================== -->
+      <div class="article-body">
+
+        <p class="fr">Dimensionner un système photovoltaïque off-grid en Afrique de l'Ouest, c'est naviguer entre des contraintes bien spécifiques : disponibilité des matériaux, prix en FCFA, irradiation solaire élevée mais parfois capricieuse, et surtout des besoins en énergie très différents des standards européens.</p>
+        <p class="en">Sizing an off-grid photovoltaic system in West Africa means navigating very specific constraints: material availability, CFA franc pricing, high but sometimes unpredictable solar irradiation, and energy needs very different from European standards.</p>
+
+        <p class="fr">Après plusieurs installations au Togo — du résidentiel chez l'habitant au commercial pour une société comme TOGO-Pneu — voici ma méthode de terrain.</p>
+        <p class="en">After several installations in Togo — from residential homes to commercial sites like TOGO-Pneu — here is my field method.</p>
+
+        <h2>
+          <span class="fr">1. Évaluer les besoins en énergie</span>
+          <span class="en">1. Assess energy needs</span>
+        </h2>
+
+        <p class="fr">La première étape — et la plus critique — est l'audit de charge. On dresse la liste de chaque équipement électrique avec sa puissance nominale et son usage journalier estimé. Pas de logiciel sophistiqué nécessaire : une feuille de papier et une discussion avec le client suffisent.</p>
+        <p class="en">The first step — and the most critical — is the load audit. We list every electrical appliance with its rated power and estimated daily usage. No sophisticated software needed: a sheet of paper and a conversation with the client is enough.</p>
+
+<pre><code><span class="fr"># Exemple de calcul de consommation journalière</span><span class="en"># Daily consumption calculation example</span>
+equipements = [
+    {"nom": "Refrigerateur",  "puissance_w": 60,  "heures_jour": 24},
+    {"nom": "Eclairage LED",  "puissance_w": 20,  "heures_jour": 6},
+    {"nom": "Ventilateur",    "puissance_w": 45,  "heures_jour": 8},
+    {"nom": "Chargeurs",      "puissance_w": 30,  "heures_jour": 3},
+    {"nom": "TV",             "puissance_w": 80,  "heures_jour": 5},
+]
+
+conso_wh = sum(e["puissance_w"] * e["heures_jour"] for e in equipements)
+print(f"<span class="fr">Consommation journaliere</span><span class="en">Daily consumption</span> : {conso_wh} Wh/j")</code></pre>
+
+        <p class="fr">Dans cet exemple on obtient <strong>1 570 Wh/jour</strong>. J'ajoute toujours 20% de marge pour les pertes et les appareils oubliés : <strong>consommation cible ≈ 1 900 Wh/jour</strong>.</p>
+        <p class="en">In this example we get <strong>1,570 Wh/day</strong>. I always add 20% margin for losses and forgotten appliances: <strong>target consumption ≈ 1,900 Wh/day</strong>.</p>
+
+        <h2>
+          <span class="fr">2. Choisir la puissance crête des panneaux</span>
+          <span class="en">2. Choose the peak panel power</span>
+        </h2>
+
+        <p class="fr">Au Togo, l'ensoleillement moyen est d'environ <strong>5 heures de pointe solaire (HSP)</strong> par jour selon les données PVGIS. C'est notre facteur de conversion énergie/puissance.</p>
+        <p class="en">In Togo, the average sunshine is approximately <strong>5 peak solar hours (PSH)</strong> per day according to PVGIS data. This is our energy/power conversion factor.</p>
+
+        <p class="fr">En tenant compte du rendement système (onduleur, câbles, salissures) estimé à 80% :</p>
+        <p class="en">Taking into account the system efficiency (inverter, cables, soiling) estimated at 80%:</p>
+
+<pre><code>HSP = 5.0          <span class="fr"># heures de pointe solaire / jour</span><span class="en"># peak solar hours / day</span>
+rendement = 0.80   <span class="fr"># rendement système</span><span class="en"># system efficiency</span>
+conso_cible = 1900 <span class="fr"># Wh / jour</span><span class="en"># Wh / day</span>
+
+puissance_wc = conso_cible / (HSP * rendement)
+# = 1900 / (5.0 * 0.80) = 475 Wc
+
+<span class="fr"># Choisir le prochain palier commercial disponible</span><span class="en"># Choose the next available commercial tier</span>
+# 2 x 300 Wc = 600 Wc  (solution retenue)</code></pre>
+
+        <h2>
+          <span class="fr">3. Dimensionner la banque de batteries</span>
+          <span class="en">3. Size the battery bank</span>
+        </h2>
+
+        <p class="fr">Pour une autonomie de <strong>2 jours sans soleil</strong> (recommandée au Togo, où les coupures CEET peuvent durer 48h) et une profondeur de décharge (DoD) de 50% pour les batteries GEL :</p>
+        <p class="en">For <strong>2 days of autonomy without sun</strong> (recommended in Togo, where CEET power cuts can last 48h) and a depth of discharge (DoD) of 50% for GEL batteries:</p>
+
+<pre><code>autonomie_jours = 2
+tension_batterie = 24  <span class="fr"># V (système 24V)</span><span class="en"># V (24V system)</span>
+dod = 0.50             <span class="fr"># profondeur de décharge max GEL</span><span class="en"># max DoD for GEL</span>
+
+capacite_ah = (conso_cible * autonomie_jours) / (tension_batterie * dod)
+# = (1900 * 2) / (24 * 0.50) = 316 Ah
+
+<span class="fr"># Solution : 2 batteries 200 Ah 12V en série-parallèle = 400 Ah / 24V</span>
+<span class="en"># Solution: 2 x 200 Ah 12V batteries in series-parallel = 400 Ah / 24V</span></code></pre>
+
+        <h2>
+          <span class="fr">4. Choisir l'onduleur-chargeur</span>
+          <span class="en">4. Choose the inverter-charger</span>
+        </h2>
+
+        <p class="fr">L'onduleur doit pouvoir supporter la puissance de démarrage des appareils à moteur (réfrigérateur, ventilateur). En règle générale, on choisit un onduleur dont la <strong>puissance nominale ≥ 1,5× la puissance continue</strong> de l'installation.</p>
+        <p class="en">The inverter must handle the starting power of motor-driven appliances (refrigerator, fan). As a rule, choose an inverter whose <strong>rated power ≥ 1.5× the continuous load</strong> of the installation.</p>
+
+        <p class="fr">Pour notre exemple avec une charge continue d'environ 235 W, un onduleur <strong>600 VA / 24V</strong> est suffisant. En pratique sur le marché togolais, on trouve facilement du 1000 VA ou 1500 VA à prix raisonnable.</p>
+        <p class="en">For our example with a continuous load of about 235 W, a <strong>600 VA / 24V</strong> inverter is sufficient. In practice on the Togolese market, 1000 VA or 1500 VA units are readily available at reasonable prices.</p>
+
+        <h2>
+          <span class="fr">5. Le câblage et les protections</span>
+          <span class="en">5. Wiring and protection</span>
+        </h2>
+
+        <p class="fr">C'est souvent la partie négligée — et pourtant la plus dangereuse. Mes règles de terrain :</p>
+        <p class="en">This is often the neglected part — yet the most dangerous. My field rules:</p>
+
+        <ul style="padding-left: 24px; margin: 0 0 20px; color: var(--text-muted); line-height: 2; list-style: disc;">
+          <li class="fr"><strong style="color:var(--text);">Câbles batterie</strong> : section minimale 16 mm² pour les runs courts, fusibles côté batterie obligatoires.</li>
+          <li class="en"><strong style="color:var(--text);">Battery cables</strong>: minimum 16 mm² section for short runs, fuses on the battery side are mandatory.</li>
+          <li class="fr"><strong style="color:var(--text);">Régulateur MPPT</strong> : toujours préférer le MPPT au PWM pour optimiser le rendement, surtout avec des panneaux en série.</li>
+          <li class="en"><strong style="color:var(--text);">MPPT controller</strong>: always prefer MPPT over PWM to optimize efficiency, especially with panels in series.</li>
+          <li class="fr"><strong style="color:var(--text);">Mise à la terre</strong> : indispensable, même si souvent oubliée sur les petites installations résidentielles.</li>
+          <li class="en"><strong style="color:var(--text);">Grounding</strong>: essential, even if often forgotten on small residential installations.</li>
+        </ul>
+
+        <h2>
+          <span class="fr">Conclusion</span>
+          <span class="en">Conclusion</span>
+        </h2>
+
+        <p class="fr">Ces calculs sont un point de départ solide. En pratique, j'utilise l'API PVGIS pour affiner l'irradiation selon la position GPS exacte du chantier, et j'ai automatisé l'essentiel de ces calculs dans <strong>SolarDim Pro</strong> avec LangGraph et Groq.</p>
+        <p class="en">These calculations are a solid starting point. In practice, I use the PVGIS API to refine irradiation based on the exact GPS position of the site, and I've automated most of these calculations in <strong>SolarDim Pro</strong> with LangGraph and Groq.</p>
+
+        <p class="fr">Dans un prochain article, je détaillerai comment j'ai automatisé ce flux avec Python — de la lecture de la facture CEET par vision IA jusqu'à la génération du devis.</p>
+        <p class="en">In a future article, I'll detail how I automated this flow with Python — from reading the CEET invoice via AI vision to generating the quote.</p>
+
+      </div>
+
+      <!-- ====================================================
+           ARTICLES SIMILAIRES
+           ==================================================== -->
+      <section class="similar-articles" aria-label="Articles similaires">
+        <p class="section-label">
+          <span class="fr">Articles similaires</span>
+          <span class="en">Similar articles</span>
+        </p>
+        <div class="similar-grid">
+
+          <a href="article.html" class="article-card" style="text-decoration:none; color:inherit;" aria-label="Lire : Lire une facture CEET avec GPT-4o Vision">
+            <span class="article-card__category cat-solaire">Solaire</span>
+            <h3 class="article-card__title">
+              <span class="fr">Lire une facture CEET avec GPT-4o Vision</span>
+              <span class="en">Reading a CEET electricity bill with GPT-4o Vision</span>
+            </h3>
+            <div class="article-card__meta">
+              <span>15 janv. 2026 · 7 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="article.html" class="article-card" style="text-decoration:none; color:inherit;" aria-label="Lire : RAANA : architecture cloud-first">
+            <span class="article-card__category cat-ia">IA</span>
+            <h3 class="article-card__title">
+              <span class="fr">RAANA : pourquoi j'ai choisi une architecture cloud-first</span>
+              <span class="en">RAANA: why I chose a cloud-first architecture</span>
+            </h3>
+            <div class="article-card__meta">
+              <span>5 mars 2026 · 6 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__name">ALI Amadou Fahishal</div>
+        <p class="footer__sub">
+          <span class="fr">Électrotechnicien &amp; Développeur Python · Lomé, Togo · 2026</span>
+          <span class="en">Electrical Engineer &amp; Python Developer · Lomé, Togo · 2026</span>
+        </p>
+        <div class="footer__socials">
+          <a href="https://linkedin.com/in/ali-fahishal" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/ali-fahishal" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+          <a href="https://facebook.com/ali.fahishal" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+        <p class="footer__tagline">
+          "<span class="fr">L'IA appliquée à l'énergie solaire, vu depuis l'Afrique de l'Ouest.</span><span class="en">AI applied to solar energy, seen from West Africa.</span>"
+        </p>
+        <p class="footer__copy">&copy; 2026 ALI Amadou Fahishal</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

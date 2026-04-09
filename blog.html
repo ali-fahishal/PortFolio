@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — ALI Amadou Fahishal</title>
+  <meta name="description" content="Articles sur l'énergie solaire, l'intelligence artificielle appliquée, le développement Python et le terrain africain.">
+  <meta name="author" content="ALI Amadou Fahishal">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body class="lang-fr">
+
+  <!-- Glows arrière-plan -->
+  <div class="bg-glow bg-glow--orange" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+
+  <!-- ======================================================
+       NAVIGATION
+       ====================================================== -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+
+      <a href="index.html" class="nav__logo" aria-label="Accueil ALI.AF">ALI.AF</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="index.html#about"    class="nav__link"><span class="fr">À propos</span><span class="en">About</span></a></li>
+        <li><a href="index.html#projects" class="nav__link"><span class="fr">Projets</span><span class="en">Projects</span></a></li>
+        <li><a href="index.html#terrain"  class="nav__link"><span class="fr">Terrain</span><span class="en">Field</span></a></li>
+        <li><a href="blog.html"           class="nav__link active">Blog</a></li>
+        <li><a href="index.html#contact"  class="nav__link">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <div class="lang-toggle" role="group" aria-label="Choix de langue">
+          <button class="lang-toggle__btn" data-lang="fr" aria-pressed="true">FR</button>
+          <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav__hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="nav__mobile" id="mobile-menu" role="navigation" aria-label="Menu mobile">
+    <a href="index.html#about"    class="nav__link"><span class="fr">À propos</span><span class="en">About</span></a>
+    <a href="index.html#projects" class="nav__link"><span class="fr">Projets</span><span class="en">Projects</span></a>
+    <a href="index.html#terrain"  class="nav__link"><span class="fr">Terrain</span><span class="en">Field</span></a>
+    <a href="blog.html"           class="nav__link">Blog</a>
+    <a href="index.html#contact"  class="nav__link">Contact</a>
+  </div>
+
+  <main>
+    <div class="blog-page">
+      <div class="container">
+
+        <p class="section-label fade-up">Blog</p>
+        <h1 class="section-title fade-up">
+          <span class="fr">Tous les <span style="color:var(--orange)">articles</span></span>
+          <span class="en">All <span style="color:var(--orange)">articles</span></span>
+        </h1>
+
+        <!-- Filtres par catégorie -->
+        <div class="blog-filters fade-up" role="group" aria-label="Filtrer les articles par catégorie">
+          <button class="filter-btn active" data-filter="all">
+            <span class="fr">Tous</span><span class="en">All</span>
+          </button>
+          <button class="filter-btn" data-filter="solaire">Solaire</button>
+          <button class="filter-btn" data-filter="ia">IA</button>
+          <button class="filter-btn" data-filter="terrain">
+            <span class="fr">Terrain</span><span class="en">Field</span>
+          </button>
+          <button class="filter-btn" data-filter="tuto">Tuto</button>
+        </div>
+
+        <!-- Liste de tous les articles -->
+        <div class="blog-list">
+
+          <!-- Article 1 -->
+          <a href="article.html"
+             class="article-card fade-up"
+             data-category="solaire"
+             style="text-decoration:none; color:inherit;"
+             aria-label="Lire : Comment dimensionner un système PV off-grid en Afrique">
+            <span class="article-card__category cat-solaire">Solaire</span>
+            <h2 class="article-card__title">
+              <span class="fr">Comment dimensionner un système PV off-grid en Afrique</span>
+              <span class="en">How to size an off-grid PV system in Africa</span>
+            </h2>
+            <p class="article-card__excerpt">
+              <span class="fr">De l'évaluation des besoins en énergie jusqu'au choix du stockage, un guide pratique pour les réalités du terrain africain.</span>
+              <span class="en">From energy needs assessment to storage selection, a practical guide for African field realities.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>12 mars 2026 · 8 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 2 -->
+          <a href="article.html"
+             class="article-card fade-up"
+             data-category="ia"
+             style="text-decoration:none; color:inherit;"
+             aria-label="Lire : RAANA : pourquoi j'ai choisi une architecture cloud-first">
+            <span class="article-card__category cat-ia">IA</span>
+            <h2 class="article-card__title">
+              <span class="fr">RAANA : pourquoi j'ai choisi une architecture cloud-first</span>
+              <span class="en">RAANA: why I chose a cloud-first architecture</span>
+            </h2>
+            <p class="article-card__excerpt">
+              <span class="fr">Les contraintes de connectivité en Afrique m'ont poussé à repenser l'architecture de RAANA de fond en comble.</span>
+              <span class="en">Connectivity constraints in Africa pushed me to rethink RAANA's architecture from the ground up.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>5 mars 2026 · 6 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 3 -->
+          <a href="article.html"
+             class="article-card fade-up"
+             data-category="ia"
+             style="text-decoration:none; color:inherit;"
+             aria-label="Lire : Mon premier agent LangChain">
+            <span class="article-card__category cat-ia">IA</span>
+            <h2 class="article-card__title">
+              <span class="fr">Mon premier agent LangChain : ce que j'ai appris</span>
+              <span class="en">My first LangChain agent: what I learned</span>
+            </h2>
+            <p class="article-card__excerpt">
+              <span class="fr">Retour d'expérience sur la construction d'un agent IA capable de dimensionner un système photovoltaïque via dialogue.</span>
+              <span class="en">Feedback on building an AI agent capable of sizing a PV system through dialogue.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>22 fév. 2026 · 10 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 4 -->
+          <a href="article.html"
+             class="article-card fade-up"
+             data-category="terrain"
+             style="text-decoration:none; color:inherit;"
+             aria-label="Lire : Installation solaire à Kpalimé">
+            <span class="article-card__category cat-terrain">
+              <span class="fr">Terrain</span><span class="en">Field</span>
+            </span>
+            <h2 class="article-card__title">
+              <span class="fr">Installation solaire à Kpalimé : retour d'expérience</span>
+              <span class="en">Solar installation in Kpalimé: field report</span>
+            </h2>
+            <p class="article-card__excerpt">
+              <span class="fr">Récit d'une installation hybride 5 KVA dans le contexte particulier de la région des Plateaux au Togo.</span>
+              <span class="en">Story of a 5 KVA hybrid installation in the specific context of the Plateaux region in Togo.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>10 fév. 2026 · 5 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 5 -->
+          <a href="article.html"
+             class="article-card fade-up"
+             data-category="tuto"
+             style="text-decoration:none; color:inherit;"
+             aria-label="Lire : FastAPI + PostgreSQL en 30 minutes">
+            <span class="article-card__category cat-tuto">Tuto</span>
+            <h2 class="article-card__title">
+              <span class="fr">FastAPI + PostgreSQL en 30 minutes : déploiement zéro-friction</span>
+              <span class="en">FastAPI + PostgreSQL in 30 minutes: zero-friction deployment</span>
+            </h2>
+            <p class="article-card__excerpt">
+              <span class="fr">Un tutoriel pratique pour déployer une API Python sur un VPS avec Docker et Nginx, en partant de zéro.</span>
+              <span class="en">A practical tutorial to deploy a Python API on a VPS with Docker and Nginx, starting from scratch.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>1 fév. 2026 · 12 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 6 -->
+          <a href="article.html"
+             class="article-card fade-up"
+             data-category="solaire"
+             style="text-decoration:none; color:inherit;"
+             aria-label="Lire : Lire une facture CEET avec GPT-4o Vision">
+            <span class="article-card__category cat-solaire">Solaire</span>
+            <h2 class="article-card__title">
+              <span class="fr">Lire une facture CEET avec GPT-4o Vision</span>
+              <span class="en">Reading a CEET electricity bill with GPT-4o Vision</span>
+            </h2>
+            <p class="article-card__excerpt">
+              <span class="fr">Extraction automatique des données de consommation depuis des factures PDF scannées — le module clé de SolarDim Pro.</span>
+              <span class="en">Automatic extraction of consumption data from scanned PDF bills — the key module of SolarDim Pro.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>15 janv. 2026 · 7 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 7 -->
+          <a href="article.html"
+             class="article-card fade-up"
+             data-category="tuto"
+             style="text-decoration:none; color:inherit;"
+             aria-label="Lire : Modbus RS485 avec Python et Raspberry Pi">
+            <span class="article-card__category cat-tuto">Tuto</span>
+            <h2 class="article-card__title">
+              <span class="fr">Modbus RS485 avec Python et Raspberry Pi</span>
+              <span class="en">Modbus RS485 with Python and Raspberry Pi</span>
+            </h2>
+            <p class="article-card__excerpt">
+              <span class="fr">Lire les données d'un onduleur solaire via le protocole Modbus RTU — implémentation pas-à-pas avec pymodbus.</span>
+              <span class="en">Reading data from a solar inverter via Modbus RTU protocol — step-by-step implementation with pymodbus.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>8 janv. 2026 · 15 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 8 -->
+          <a href="article.html"
+             class="article-card fade-up"
+             data-category="terrain"
+             style="text-decoration:none; color:inherit;"
+             aria-label="Lire : Choisir des batteries pour le marché togolais">
+            <span class="article-card__category cat-terrain">
+              <span class="fr">Terrain</span><span class="en">Field</span>
+            </span>
+            <h2 class="article-card__title">
+              <span class="fr">Choisir des batteries pour le marché togolais</span>
+              <span class="en">Choosing batteries for the Togolese market</span>
+            </h2>
+            <p class="article-card__excerpt">
+              <span class="fr">Comparatif GEL vs AGM vs Lithium selon les contraintes réelles : prix FCFA, disponibilité locale, température ambiante.</span>
+              <span class="en">GEL vs AGM vs Lithium comparison based on real constraints: CFA franc prices, local availability, ambient temperature.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>20 déc. 2025 · 9 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 9 -->
+          <a href="article.html"
+             class="article-card fade-up"
+             data-category="ia"
+             style="text-decoration:none; color:inherit;"
+             aria-label="Lire : RAG avec ChromaDB et LangChain">
+            <span class="article-card__category cat-ia">IA</span>
+            <h2 class="article-card__title">
+              <span class="fr">RAG avec ChromaDB et LangChain : guide complet</span>
+              <span class="en">RAG with ChromaDB and LangChain: complete guide</span>
+            </h2>
+            <p class="article-card__excerpt">
+              <span class="fr">Construction d'un système de Retrieval-Augmented Generation pour interroger des fiches techniques de panneaux solaires.</span>
+              <span class="en">Building a Retrieval-Augmented Generation system to query solar panel datasheets.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>5 déc. 2025 · 18 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__name">ALI Amadou Fahishal</div>
+        <p class="footer__sub">
+          <span class="fr">Électrotechnicien &amp; Développeur Python · Lomé, Togo · 2026</span>
+          <span class="en">Electrical Engineer &amp; Python Developer · Lomé, Togo · 2026</span>
+        </p>
+        <div class="footer__socials">
+          <a href="https://linkedin.com/in/ali-fahishal" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/ali-fahishal" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+          <a href="https://facebook.com/ali.fahishal" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+        <p class="footer__tagline">
+          "<span class="fr">L'IA appliquée à l'énergie solaire, vu depuis l'Afrique de l'Ouest.</span><span class="en">AI applied to solar energy, seen from West Africa.</span>"
+        </p>
+        <p class="footer__copy">&copy; 2026 ALI Amadou Fahishal</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

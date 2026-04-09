@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALI Amadou Fahishal — Électrotechnicien & Développeur Python</title>
+  <meta name="description" content="Portfolio de ALI Amadou Fahishal, électrotechnicien spécialisé en systèmes photovoltaïques et développeur Python/IA basé à Lomé, Togo.">
+  <meta name="author" content="ALI Amadou Fahishal">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body class="lang-fr">
+
+  <!-- ======================================================
+       NAVIGATION
+       ====================================================== -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+
+      <a href="index.html" class="nav__logo" aria-label="Accueil ALI.AF">AAF</a>
+
+      <!-- Liens desktop -->
+      <ul class="nav__links" role="list">
+        <li><a href="#about"    class="nav__link"><span class="fr">À propos</span><span class="en">About</span></a></li>
+        <li><a href="#projects" class="nav__link"><span class="fr">Projets</span><span class="en">Projects</span></a></li>
+        <li><a href="#terrain"  class="nav__link"><span class="fr">Terrain</span><span class="en">Field</span></a></li>
+        <li><a href="blog.html" class="nav__link">Blog</a></li>
+        <li><a href="#contact"  class="nav__link">Contact</a></li>
+      </ul>
+
+      <!-- Contrôles droits : langue + hamburger -->
+      <div class="nav__actions">
+        <div class="lang-toggle" role="group" aria-label="Choix de langue">
+          <button class="lang-toggle__btn" data-lang="fr" aria-pressed="true">FR</button>
+          <button class="lang-toggle__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <button class="nav__hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="nav__mobile" id="mobile-menu" role="navigation" aria-label="Menu mobile">
+    <a href="#about"    class="nav__link"><span class="fr">À propos</span><span class="en">About</span></a>
+    <a href="#projects" class="nav__link"><span class="fr">Projets</span><span class="en">Projects</span></a>
+    <a href="#terrain"  class="nav__link"><span class="fr">Terrain</span><span class="en">Field</span></a>
+    <a href="blog.html" class="nav__link">Blog</a>
+    <a href="#contact"  class="nav__link">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ====================================================
+         1. HERO
+         ==================================================== -->
+    <section id="hero" aria-label="Introduction">
+      <div class="hero__visual" aria-hidden="true"></div>
+
+      <div class="hero__container">
+
+        <!-- NOM GÉANT centré — inspiré Nino -->
+        <div class="hero__name-wrap">
+          <h1 class="hero__name">
+            <span class="hero__name-l1">ALI Amadou</span>
+            <span class="hero__name-l2">Fahishal</span>
+          </h1>
+        </div>
+
+        <!-- 3 colonnes : infos gauche | photo centre | desc droite -->
+        <div class="hero__cols">
+
+          <!-- Colonne gauche : badge + titre + stats -->
+          <div class="hero__col hero__col--left">
+            <span class="badge">
+              <span class="dot" aria-hidden="true"></span>
+              <span class="fr">Disponible</span>
+              <span class="en">Available</span>
+            </span>
+            <p class="hero__role fr">Électrotechnicien<br>&amp; Développeur <span class="accent">Python</span></p>
+            <p class="hero__role en">Electrical Engineer<br>&amp; Python <span class="accent">Developer</span></p>
+            <div class="hero__stats" role="list">
+              <div class="hero__stat" role="listitem">
+                <div class="hero__stat-value">4+</div>
+                <div class="hero__stat-label"><span class="fr">Chantiers</span><span class="en">Field projects</span></div>
+              </div>
+              <div class="hero__stat" role="listitem">
+                <div class="hero__stat-value">3+</div>
+                <div class="hero__stat-label"><span class="fr">Projets digitaux</span><span class="en">Digital projects</span></div>
+              </div>
+              <div class="hero__stat" role="listitem">
+                <div class="hero__stat-value">5+</div>
+                <div class="hero__stat-label"><span class="fr">Ans terrain</span><span class="en">Field years</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonne centre : photo portrait -->
+          <div class="hero__col hero__col--center">
+            <div class="hero__portrait">
+              <img src="assets/images/profil.png"
+                   alt="ALI Amadou Fahishal — Électrotechnicien &amp; Développeur Python"
+                   loading="eager">
+            </div>
+          </div>
+
+          <!-- Colonne droite : description + CTA -->
+          <div class="hero__col hero__col--right">
+            <p class="hero__subtitle">
+              <span class="fr">Je construis des outils numériques pour l'énergie solaire en Afrique de l'Ouest — du terrain au cloud, du câblage au code.</span>
+              <span class="en">I build digital tools for solar energy in West Africa — from the field to the cloud, from wiring to code.</span>
+            </p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn-primary">
+                <span class="fr">Voir mes projets</span>
+                <span class="en">View my projects</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <span class="fr">Me contacter</span>
+                <span class="en">Contact me</span>
+              </a>
+            </div>
+            <p class="hero__location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Lomé, Togo · Afrique de l'Ouest
+            </p>
+          </div>
+
+        </div><!-- /.hero__cols -->
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         2. À PROPOS
+         ==================================================== -->
+    <section id="about" aria-label="À propos">
+      <div class="container">
+
+        <p class="section-label fade-up">
+          <span class="fr">À propos</span>
+          <span class="en">About</span>
+        </p>
+
+        <div class="about__grid">
+
+          <!-- Texte de présentation -->
+          <div>
+            <h2 class="section-title fade-up">
+              <span class="fr">Du câblage<br>au <span style="color:var(--orange)">code</span></span>
+              <span class="en">From wiring<br>to <span style="color:var(--orange)">code</span></span>
+            </h2>
+            <div class="about__text fade-up">
+              <p class="fr">Électrotechnicien de formation, je me suis spécialisé dans les <strong>systèmes photovoltaïques</strong> avant de plonger dans le développement Python et l'intelligence artificielle appliquée à l'énergie. Basé à Lomé, Togo, je construis des projets qui répondent aux réalités du terrain africain — coupures de courant, connectivité limitée, prix en FCFA.</p>
+              <p class="fr">Mon approche : <strong>comprendre le problème sur le terrain avant de coder la solution.</strong></p>
+              <p class="en">Trained as an electrical engineer, I specialized in <strong>photovoltaic systems</strong> before diving into Python development and AI applied to energy. Based in Lomé, Togo, I build projects that address African field realities — power cuts, limited connectivity, prices in CFA francs.</p>
+              <p class="en">My approach: <strong>understand the problem in the field before coding the solution.</strong></p>
+            </div>
+          </div>
+
+          <!-- Grille de compétences -->
+          <div class="fade-up">
+            <p class="about__skills-title">
+              <span class="fr">Compétences</span>
+              <span class="en">Skills</span>
+            </p>
+            <div class="skills-grid">
+
+              <div class="skill-card">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </span>
+                <div>
+                  <div class="skill-card__name"><span class="fr">Systèmes PV</span><span class="en">PV Systems</span></div>
+                  <div class="skill-card__sub"><span class="fr">Dimensionnement, installation, maintenance</span><span class="en">Sizing, installation, maintenance</span></div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+                </span>
+                <div>
+                  <div class="skill-card__name"><span class="fr">Électrotechnique</span><span class="en">Electrical Eng.</span></div>
+                  <div class="skill-card__sub"><span class="fr">Générale &amp; industrielle</span><span class="en">General &amp; industrial</span></div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </span>
+                <div>
+                  <div class="skill-card__name">Python</div>
+                  <div class="skill-card__sub">FastAPI, SQLAlchemy, Pydantic</div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v4l3 3"/></svg>
+                </span>
+                <div>
+                  <div class="skill-card__name">IA &amp; Agents</div>
+                  <div class="skill-card__sub">LangChain, RAG, LLM routing</div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+                </span>
+                <div>
+                  <div class="skill-card__name">IoT</div>
+                  <div class="skill-card__sub">Raspberry Pi, Modbus RS485</div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </span>
+                <div>
+                  <div class="skill-card__name"><span class="fr">Bases de données</span><span class="en">Databases</span></div>
+                  <div class="skill-card__sub">PostgreSQL, SQLite</div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+                </span>
+                <div>
+                  <div class="skill-card__name"><span class="fr">Modélisation 3D</span><span class="en">3D Modeling</span></div>
+                  <div class="skill-card__sub">Blender</div>
+                </div>
+              </div>
+
+              <div class="skill-card">
+                <span class="skill-card__icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                </span>
+                <div>
+                  <div class="skill-card__name">Frontend</div>
+                  <div class="skill-card__sub">HTML, Tailwind CSS, Chart.js</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         3. PROJETS DIGITAUX
+         ==================================================== -->
+    <section id="projects" aria-label="Projets digitaux">
+      <div class="container">
+
+        <p class="section-label fade-up">
+          <span class="fr">Projets digitaux</span>
+          <span class="en">Digital Projects</span>
+        </p>
+        <h2 class="section-title fade-up">
+          <span class="fr">Du code qui résout<br>des <span style="color:var(--orange)">problèmes réels</span></span>
+          <span class="en">Code that solves<br><span style="color:var(--orange)">real problems</span></span>
+        </h2>
+
+        <div class="projects-grid">
+
+          <!-- Carte vedette — RAANA (2 colonnes) -->
+          <article class="card project-card project-card--featured fade-up">
+            <div class="project-card__header">
+              <div class="project-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <span class="badge">
+                <span class="fr">IoT SaaS · En développement</span>
+                <span class="en">IoT SaaS · In development</span>
+              </span>
+            </div>
+            <h3 class="project-card__title">Raana Africa</h3>
+            <p class="project-card__desc">
+              <span class="fr">Plateforme de monitoring solaire et maintenance prédictive pour techniciens en Afrique de l'Ouest. Collecte de données temps réel depuis les onduleurs via Modbus RS485, tableaux de bord analytiques et alertes intelligentes.</span>
+              <span class="en">Solar monitoring platform and predictive maintenance for technicians in West Africa. Real-time data collection from inverters via Modbus RS485, analytical dashboards and smart alerts.</span>
+            </p>
+            <div class="project-card__stack">
+              <span class="stack-tag">FastAPI</span>
+              <span class="stack-tag">PostgreSQL</span>
+              <span class="stack-tag">Raspberry Pi</span>
+              <span class="stack-tag">Modbus RS485</span>
+              <span class="stack-tag">Scikit-learn</span>
+            </div>
+            <div class="project-card__links">
+              <span class="project-link project-link--soon" aria-label="Démo bientôt disponible">
+                <span class="fr">Bientôt</span><span class="en">Coming soon</span>
+              </span>
+              <a href="https://github.com/ali-fahishal" class="project-link" target="_blank" rel="noopener noreferrer">
+                GitHub
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Carte — Agent PV -->
+          <article class="card project-card fade-up">
+            <div class="project-card__header">
+              <div class="project-icon project-icon--purple" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              </div>
+              <span class="badge badge--purple">
+                <span class="fr">IA · En développement</span>
+                <span class="en">AI · In development</span>
+              </span>
+            </div>
+            <h3 class="project-card__title">Agent PV</h3>
+            <p class="project-card__desc">
+              <span class="fr">Agent IA pour le dimensionnement de systèmes photovoltaïques. Routing hybride : Ollama → Groq → Claude Sonnet selon la complexité de la requête.</span>
+              <span class="en">AI agent for photovoltaic system sizing. Hybrid routing: Ollama → Groq → Claude Sonnet based on query complexity.</span>
+            </p>
+            <div class="project-card__stack">
+              <span class="stack-tag">FastAPI</span>
+              <span class="stack-tag">LangChain</span>
+              <span class="stack-tag">RAG</span>
+              <span class="stack-tag">ChromaDB</span>
+            </div>
+            <div class="project-card__links">
+              <a href="https://github.com/ali-fahishal" class="project-link" target="_blank" rel="noopener noreferrer">
+                GitHub
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Carte — SolarDim Pro -->
+          <article class="card project-card fade-up">
+            <div class="project-card__header">
+              <div class="project-icon project-icon--green" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+              </div>
+              <span class="badge badge--green">Proof of concept</span>
+            </div>
+            <h3 class="project-card__title">Raana-Dim</h3>
+            <p class="project-card__desc">
+              <span class="fr">Outil de dimensionnement PV avec analyse de factures CEET par vision IA et données météo PVGIS.</span>
+              <span class="en">PV sizing tool with CEET invoice analysis via AI vision and PVGIS weather data.</span>
+            </p>
+            <div class="project-card__stack">
+              <span class="stack-tag">Streamlit</span>
+              <span class="stack-tag">LangGraph</span>
+              <span class="stack-tag">Groq</span>
+              <span class="stack-tag">PVGIS API</span>
+            </div>
+            <div class="project-card__links">
+              <span class="project-link project-link--soon" aria-label="Démo bientôt disponible">
+                <span class="fr">Bientôt</span><span class="en">Coming soon</span>
+              </span>
+              <a href="https://github.com/ali-fahishal" class="project-link" target="_blank" rel="noopener noreferrer">
+                GitHub
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         4. RÉALISATIONS TERRAIN
+         ==================================================== -->
+    <section id="terrain" aria-label="Réalisations terrain">
+      <div class="container">
+
+        <p class="section-label fade-up">
+          <span class="fr">Réalisations terrain</span>
+          <span class="en">Field Work</span>
+        </p>
+        <h2 class="section-title fade-up">
+          <span class="fr">Avant le code,<br>il y a le <span style="color:var(--orange)">terrain</span></span>
+          <span class="en">Before the code,<br>there's the <span style="color:var(--orange)">field</span></span>
+        </h2>
+        <p class="terrain__intro fade-up">
+          <span class="fr">Voici quelques chantiers réalisés au Togo.</span>
+          <span class="en">Here are some projects completed in Togo.</span>
+        </p>
+
+        <!-- Bannière terrain — coucher de soleil + portrait -->
+        <div class="terrain__banner fade-up">
+          <div class="terrain__banner-photo">
+            <img src="assets/images/terrain/equipe-montage-palmier.jpg"
+                 alt="Équipe au travail sur un chantier solaire à Lomé"
+                 loading="lazy">
+          </div>
+          <div class="terrain__banner-photo terrain__banner-photo--portrait">
+            <img src="assets/images/terrain/portrait-chantier.jpg"
+                 alt="Ali Amadou Fahishal sur chantier solaire"
+                 loading="lazy">
+            <div class="terrain__banner-label">
+              <span class="fr">Sur le terrain, Lomé</span>
+              <span class="en">In the field, Lomé</span>
+            </div>
+          </div>
+          <div class="terrain__banner-photo">
+            <img src="assets/images/terrain/nettoyage-arc-en-ciel.jpg"
+                 alt="Nettoyage de panneaux solaires avec arc-en-ciel"
+                 loading="lazy">
+          </div>
+        </div>
+
+        <div class="chantiers-grid">
+
+          <!-- Chantier 1 — TOGO-Pneu -->
+          <article class="chantier-card fade-up">
+            <div class="chantier-card__gallery" aria-label="Galerie photos Togo-Pneu">
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/togopneu/projetTogopneu1.jpg"
+                     alt="Installation solaire Togo-Pneu — vue principale"
+                     data-lightbox="assets/images/solaires/togopneu/projetTogopneu1.jpg"
+                     loading="lazy">
+              </div>
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/togopneu/projettogopneu2.jpg"
+                     alt="Installation solaire Togo-Pneu — détail"
+                     data-lightbox="assets/images/solaires/togopneu/projettogopneu2.jpg"
+                     loading="lazy">
+              </div>
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/togopneu/projettogopneu3.jpg"
+                     alt="Installation solaire Togo-Pneu — armoire électrique"
+                     data-lightbox="assets/images/solaires/togopneu/projettogopneu3.jpg"
+                     loading="lazy">
+              </div>
+            </div>
+            <div class="chantier-card__info">
+              <h3 class="chantier-card__title">
+                <span class="fr">Installation entreprise — TOGO-Pneu, Lomé</span>
+                <span class="en">Company installation — TOGO-Pneu, Lomé</span>
+              </h3>
+              <div class="chantier-card__meta">
+                <span>10 KVA hybride</span>
+                <span>2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chantier 2 — Hôtel 2F -->
+          <article class="chantier-card fade-up">
+            <div class="chantier-card__gallery" aria-label="Galerie photos Hôtel 2F">
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/hotel2F/img-acceuil.jpg"
+                     alt="Installation solaire Hôtel 2F — vue principale"
+                     data-lightbox="assets/images/solaires/hotel2F/img-acceuil.jpg"
+                     loading="lazy">
+              </div>
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/hotel2F/img-acceuil1.jpg"
+                     alt="Installation solaire Hôtel 2F — panneaux"
+                     data-lightbox="assets/images/solaires/hotel2F/img-acceuil1.jpg"
+                     loading="lazy">
+              </div>
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/hotel2F/projethotel2F2.jpg"
+                     alt="Installation solaire Hôtel 2F — détail onduleur"
+                     data-lightbox="assets/images/solaires/hotel2F/projethotel2F2.jpg"
+                     loading="lazy">
+              </div>
+            </div>
+            <div class="chantier-card__info">
+              <h3 class="chantier-card__title">
+                <span class="fr">Installation commerciale — Hôtel 2F, Lomé</span>
+                <span class="en">Commercial installation — Hotel 2F, Lomé</span>
+              </h3>
+              <div class="chantier-card__meta">
+                <span>10 KVA hybride</span>
+                <span>2024</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chantier 3 — Avédji -->
+          <article class="chantier-card fade-up">
+            <div class="chantier-card__gallery" aria-label="Galerie photos Avédji">
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/avedji/projetAvedi1.jpg"
+                     alt="Installation résidentielle Avédji — vue principale"
+                     data-lightbox="assets/images/solaires/avedji/projetAvedi1.jpg"
+                     loading="lazy">
+              </div>
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/avedji/projetAvedji2.jpg"
+                     alt="Installation résidentielle Avédji — panneaux sur toit"
+                     data-lightbox="assets/images/solaires/avedji/projetAvedji2.jpg"
+                     loading="lazy">
+              </div>
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/avedji/projetAvedji3.jpg"
+                     alt="Installation résidentielle Avédji — armoire"
+                     data-lightbox="assets/images/solaires/avedji/projetAvedji3.jpg"
+                     loading="lazy">
+              </div>
+            </div>
+            <div class="chantier-card__info">
+              <h3 class="chantier-card__title">
+                <span class="fr">Installation résidentielle — Avédji, Lomé</span>
+                <span class="en">Residential installation — Avédji, Lomé</span>
+              </h3>
+              <div class="chantier-card__meta">
+                <span>6 KVA hybride</span>
+                <span>2023</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Chantier 4 — Adidogomé -->
+          <article class="chantier-card fade-up">
+            <div class="chantier-card__gallery" aria-label="Galerie photos Adidogomé">
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/adidogome/projetadidogome1.jpg"
+                     alt="Installation résidentielle Adidogomé — vue principale"
+                     data-lightbox="assets/images/solaires/adidogome/projetadidogome1.jpg"
+                     loading="lazy">
+              </div>
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/adidogome/projetadidogome2.jpg"
+                     alt="Installation résidentielle Adidogomé — détail"
+                     data-lightbox="assets/images/solaires/adidogome/projetadidogome2.jpg"
+                     loading="lazy">
+              </div>
+              <div class="chantier-card__gallery-item">
+                <img src="assets/images/solaires/zanguera/projetzanguera1.jpg"
+                     alt="Installation Zanguera — vue terrain"
+                     data-lightbox="assets/images/solaires/zanguera/projetzanguera1.jpg"
+                     loading="lazy">
+              </div>
+            </div>
+            <div class="chantier-card__info">
+              <h3 class="chantier-card__title">
+                <span class="fr">Installation résidentielle — Adidogomé, Lomé</span>
+                <span class="en">Residential installation — Adidogomé, Lomé</span>
+              </h3>
+              <div class="chantier-card__meta">
+                <span>Off-grid</span>
+                <span>2023</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         5. CRÉATIONS 3D
+         ==================================================== -->
+    <section id="creations3d" aria-label="Créations 3D">
+      <div class="container">
+
+        <p class="section-label fade-up">
+          <span class="fr">Créations 3D</span>
+          <span class="en">3D Creations</span>
+        </p>
+        <h2 class="section-title fade-up">
+          <span class="fr">Modélisation<br>&amp; <span style="color:var(--orange)">Animation</span> Blender</span>
+          <span class="en">3D Modeling<br>&amp; <span style="color:var(--orange)">Animation</span></span>
+        </h2>
+
+        <!-- Vidéos -->
+        <div class="creations-layout">
+
+          <!-- Vidéo 1 — KYA-BackUp demo -->
+          <div class="video-card fade-up">
+            <video class="video-card__video" autoplay muted loop playsinline>
+              <source src="assets/videos/kya-backup-demo-1.mp4" type="video/mp4">
+            </video>
+            <div class="video-card__info">
+              <h3 class="video-card__title">
+                <span class="fr">KYA-BackUp — Animation 3D</span>
+                <span class="en">KYA-BackUp — 3D Animation</span>
+              </h3>
+              <p class="video-card__desc">
+                <span class="fr">Modélisation Blender d'un système de backup solaire portable sur roulettes — conçu pour les entreprises togolaises face aux coupures d'électricité.</span>
+                <span class="en">Blender modeling of a portable solar backup system on wheels — designed for Togolese businesses facing power outages.</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Vidéo 2 — KYA-BackUp vue extérieure -->
+          <div class="video-card fade-up">
+            <video class="video-card__video" autoplay muted loop playsinline>
+              <source src="assets/videos/kya-backup-demo-2.mp4" type="video/mp4">
+            </video>
+            <div class="video-card__info">
+              <h3 class="video-card__title">
+                <span class="fr">Nettoyeur automatique de modules  — Scène solaire</span>
+                <span class="en">KYA-BackUp — Solar Scene</span>
+              </h3>
+              <p class="video-card__desc">
+                <span class="fr">Vue extérieure du système KYA-BackUp intégré sur site photovoltaïque — rendu réaliste Cycles.</span>
+                <span class="en">Outdoor view of the KYA-BackUp system integrated on a photovoltaic site — realistic Cycles render.</span>
+              </p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- Galerie images 3D — Renders KYA-BackUp -->
+        <div class="gallery-3d">
+          <div class="gallery-3d__item">
+            <img src="assets/images/3D/kya-backup-studio-1.jpg"
+                 alt="KYA-BackUp — render studio vue 3/4"
+                 data-lightbox="assets/images/3D/kya-backup-studio-1.jpg"
+                 loading="lazy">
+          </div>
+          <div class="gallery-3d__item">
+            <img src="assets/images/3D/kya-backup-studio-2.jpg"
+                 alt="KYA-BackUp — render studio face"
+                 data-lightbox="assets/images/3D/kya-backup-studio-2.jpg"
+                 loading="lazy">
+          </div>
+          <div class="gallery-3d__item">
+            <img src="assets/images/3D/kya-backup-outdoor-duo.jpg"
+                 alt="KYA-BackUp — les deux systèmes sur site solaire"
+                 data-lightbox="assets/images/3D/kya-backup-outdoor-duo.jpg"
+                 loading="lazy">
+          </div>
+          <div class="gallery-3d__item">
+            <img src="assets/images/3D/kya-backup-solar-bg.jpg"
+                 alt="KYA-BackUp — intégration sur site photovoltaïque"
+                 data-lightbox="assets/images/3D/kya-backup-solar-bg.jpg"
+                 loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         6. BLOG — Aperçu 3 derniers articles
+         ==================================================== -->
+    <section id="blog" aria-label="Blog">
+      <div class="container">
+
+        <p class="section-label fade-up">Blog</p>
+        <h2 class="section-title fade-up">
+          <span class="fr">Derniers <span style="color:var(--orange)">articles</span></span>
+          <span class="en">Latest <span style="color:var(--orange)">articles</span></span>
+        </h2>
+
+        <div class="blog-grid">
+
+          <a href="article.html" class="article-card fade-up" style="text-decoration:none; color:inherit;">
+            <span class="article-card__category cat-solaire">Solaire</span>
+            <h3 class="article-card__title">
+              <span class="fr">Comment dimensionner un système PV off-grid en Afrique</span>
+              <span class="en">How to size an off-grid PV system in Africa</span>
+            </h3>
+            <p class="article-card__excerpt">
+              <span class="fr">De l'évaluation des besoins jusqu'au choix du stockage, un guide pratique pour le terrain africain.</span>
+              <span class="en">From energy needs assessment to storage selection, a practical guide for African field conditions.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>12 mars 2026 · 8 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="article.html" class="article-card fade-up" style="text-decoration:none; color:inherit;">
+            <span class="article-card__category cat-ia">IA</span>
+            <h3 class="article-card__title">
+              <span class="fr">RAANA : pourquoi j'ai choisi une architecture cloud-first</span>
+              <span class="en">RAANA: why I chose a cloud-first architecture</span>
+            </h3>
+            <p class="article-card__excerpt">
+              <span class="fr">Les contraintes de connectivité en Afrique m'ont poussé à repenser l'architecture de RAANA de fond en comble.</span>
+              <span class="en">Connectivity constraints in Africa pushed me to rethink RAANA's architecture from the ground up.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>5 mars 2026 · 6 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="article.html" class="article-card fade-up" style="text-decoration:none; color:inherit;">
+            <span class="article-card__category cat-ia">IA</span>
+            <h3 class="article-card__title">
+              <span class="fr">Mon premier agent LangChain : ce que j'ai appris</span>
+              <span class="en">My first LangChain agent: what I learned</span>
+            </h3>
+            <p class="article-card__excerpt">
+              <span class="fr">Retour d'expérience sur la construction d'un agent IA capable de dimensionner un système PV via dialogue.</span>
+              <span class="en">Feedback on building an AI agent capable of sizing a PV system through dialogue.</span>
+            </p>
+            <div class="article-card__meta">
+              <span>22 fév. 2026 · 10 min</span>
+              <span class="article-card__read">
+                <span class="fr">Lire</span><span class="en">Read</span>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="blog-cta fade-up">
+          <a href="blog.html" class="btn btn-secondary">
+            <span class="fr">Voir tous les articles</span>
+            <span class="en">View all articles</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         7. CONTACT
+         ==================================================== -->
+    <section id="contact" aria-label="Contact">
+      <div class="container">
+
+        <p class="section-label fade-up">Contact</p>
+
+        <div class="contact-grid">
+
+          <!-- Informations de contact -->
+          <div class="fade-up">
+            <h2 class="contact__info-title">
+              <span class="fr">Travaillons<br><span style="color:var(--orange)">ensemble</span></span>
+              <span class="en">Let's work<br><span style="color:var(--orange)">together</span></span>
+            </h2>
+            <p class="contact__info-text">
+              <span class="fr">Disponible pour des opportunités au Togo  et en Afrique de l'Ouest.</span>
+              <span class="en">Available for opportunities in Togo (Kara, Kpalimé) and West Africa.</span>
+            </p>
+
+            <div class="contact__links">
+
+              <a href="mailto:contact@ali-fahishal.com" class="contact__link-item">
+                <div class="contact__link-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                amadouali0110@gmail.com
+              </a>
+
+              <a href="https://linkedin.com/in/ali-fahishal" class="contact__link-item" target="_blank" rel="noopener noreferrer">
+                <div class="contact__link-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                Ali Amadou Fahishal
+              </a>
+
+              <!-- TODO: remplacer 22890000000 par le vrai numéro WhatsApp -->
+              <a href="https://wa.me/22870147649" class="contact__link-item" target="_blank" rel="noopener noreferrer">
+                <div class="contact__link-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                </div>
+                WhatsApp
+              </a>
+
+              <div class="contact__link-item" style="pointer-events:none;">
+                <div class="contact__link-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <span class="fr">Lomé, Togo</span>
+                <span class="en">Lomé, Togo</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Formulaire -->
+          <div class="fade-up">
+            <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  <span class="fr">Nom</span><span class="en">Name</span>
+                </label>
+                <input type="text" id="contact-name" name="name" class="form-input"
+                       placeholder="John Doe" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email</label>
+                <input type="email" id="contact-email" name="email" class="form-input"
+                       placeholder="john@example.com" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  <span class="fr">Message</span><span class="en">Message</span>
+                </label>
+                <textarea id="contact-message" name="message" class="form-textarea"
+                          placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="align-self:flex-start;">
+                <span class="fr">Envoyer</span><span class="en">Send</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__name">ALI Amadou Fahishal</div>
+        <p class="footer__sub">
+          <span class="fr">Électrotechnicien &amp; Développeur Python · Lomé, Togo · 2026</span>
+          <span class="en">Electrical Engineer &amp; Python Developer · Lomé, Togo · 2026</span>
+        </p>
+        <div class="footer__socials">
+          <a href="https://linkedin.com/in/ali-fahishal" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/ali-fahishal" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          </a>
+          <a href="https://facebook.com/ali.fahishal" class="footer__social" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+        <p class="footer__tagline">
+          "<span class="fr">L'IA appliquée à l'énergie solaire, vu depuis l'Afrique de l'Ouest.</span><span class="en">AI applied to solar energy, seen from West Africa.</span>"
+        </p>
+        <p class="footer__copy">&copy; 2026 ALI Amadou Fahishal</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================================
+       LIGHTBOX
+       ====================================================== -->
+  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse de photos">
+    <button class="lightbox__close" aria-label="Fermer la visionneuse">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__prev" aria-label="Photo précédente">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+    </button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__nav lightbox__next" aria-label="Photo suivante">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
